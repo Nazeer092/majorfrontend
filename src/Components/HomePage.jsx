@@ -4,7 +4,7 @@ import './CSS/HomePage.css';
 
 const HomePage = () => {
   const handleGetStarted = () => {
-    // Add your navigation logic here
+      //Add your navigation logic here
     console.log('Let\'s Start button clicked!');
   };
 
@@ -19,7 +19,7 @@ const HomePage = () => {
           </h1>
           
           <button className="cta-button" onClick={handleGetStarted}>
-            Let's Start
+            Now Begin
             <span className="button-icon"></span>
           </button>
         </div>

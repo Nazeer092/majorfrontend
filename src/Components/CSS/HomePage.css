@@ -17,10 +17,12 @@ body, html {
 /* Hero Section */
 .hero-section {
   height:100vh;
+  /* border:2px solid black; */
+  /* width:100vw; */
   box-sizing: border-box;
-  background-image:url('../../resources/Images/Homepagebg.jpg')  ;
+  background-image:url('../../resources/Images/Homepagebg.jpg');
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -56,6 +58,7 @@ body, html {
   padding: 0 2rem;
   position: relative;
   z-index: 1;
+ 
 }
 
 .hero-title {
@@ -190,3 +193,4 @@ body, html {
     font-size: 1.5rem;
   }
 }
+
