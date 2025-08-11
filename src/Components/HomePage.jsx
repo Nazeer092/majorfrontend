@@ -1,16 +1,13 @@
 import React from 'react';
 import './CSS/HomePage.css';
-// import backgroundImage from '../../resources/Images/Homepagebg.jpg';
 
 const HomePage = () => {
   const handleGetStarted = () => {
-      //Add your navigation logic here
     console.log('Let\'s Start button clicked!');
   };
 
   return (
     <div className="landing-page">
-      
       <div className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">
@@ -20,7 +17,7 @@ const HomePage = () => {
           
           <button className="cta-button" onClick={handleGetStarted}>
             Now Begin
-            <span className="button-icon"></span>
+            <span className="button-icon">→</span>
           </button>
         </div>
       </div>

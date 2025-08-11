@@ -1,26 +1,45 @@
+/* Aggressive CSS Reset - Add this at the very top */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
   font-family: 'Arial', sans-serif;
-  overflow: hidden;
 }
 
+#root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+/* Landing Page Styles */
 .landing-page {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* Hero Section */
 .hero-section {
-  height:100%;
+  height: 100vh;
+  width: 100%;
   box-sizing: border-box;
-  background-image:url('../../resources/Images/Homepagebg.jpg');
+  background-image: url('../../resources/Images/Homepagebg.jpg');
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -29,11 +48,16 @@ body, html {
   justify-content: center;
   text-align: center;
   color: white;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Animated background effect */
+/* Rest of your existing styles remain the same */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -58,7 +82,6 @@ body, html {
   padding: 0 2rem;
   position: relative;
   z-index: 1;
- 
 }
 
 .hero-title {
@@ -79,7 +102,8 @@ body, html {
 }
 
 .cta-button {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  height: 50px;
+  background: linear-gradient(45deg, #ff6b6b, #24eea0);
   color: white;
   border: none;
   padding: 20px 50px;
@@ -192,7 +216,4 @@ body, html {
     padding: 25px 60px;
     font-size: 1.5rem;
   }
-}
-.landing-page{
-  width:120%;
 }
